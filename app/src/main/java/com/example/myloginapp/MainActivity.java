@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,11 +22,15 @@ public class MainActivity extends AppCompatActivity {
     GoogleSignInClient gsc;
     ImageView googleBtn;
     Button button1;
+    EditText inputText;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        inputText = (EditText) findViewById(R.id.username);
 
         button1=(Button)findViewById(R.id.loginbtn);
 
@@ -33,8 +38,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent=new Intent(MainActivity.this,activity2.class);
-                startActivity(intent);
+                if("username.getText().toString"=="biswas"){
+                    Intent intent=new Intent(MainActivity.this,activity2.class);
+                    startActivity(intent);
+                }else{
+                    Intent intent=new Intent(MainActivity.this,activity2.class);
+                    startActivity(intent);
+                }
+
             }
         });
 

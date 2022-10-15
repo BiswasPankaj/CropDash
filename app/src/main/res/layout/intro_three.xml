@@ -15,7 +15,7 @@
             android:layout_width="286dp"
             android:layout_height="598dp"
             android:layout_gravity="center"
-            android:background="@drawable/gandu" />
+            android:background="@drawable/garf" />
 
     </LinearLayout>
 
