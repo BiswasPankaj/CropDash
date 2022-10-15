@@ -156,7 +156,8 @@ public class MyViewPagerAdapter extends PagerAdapter{
 }
     private void launchHomeScreen() {
         introPref.setIsFirstTimeLaunch(false);
-        startActivity(new Intent(MainActivity.this, ActivityHome.class));
+        startActivity(new Intent(activity2.this, ActivityHome.class));
+
         finish();
     }
 }

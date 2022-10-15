@@ -12,10 +12,10 @@
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:background="@drawable/Fourth"
-            android:layout_gravity="center"/>
+            android:layout_width="289dp"
+            android:layout_height="594dp"
+            android:layout_gravity="center"
+            android:background="@drawable/som4" />
 
     </LinearLayout>
 
